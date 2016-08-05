@@ -1,7 +1,6 @@
 package com.github.beothorn.html;
 
-public interface DOMElement {
-	
+public interface Renderable {
 	public String render();
 
 }
