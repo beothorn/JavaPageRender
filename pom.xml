@@ -5,7 +5,7 @@
 	<groupId>com.github.beothorn</groupId>
 	<artifactId>javaPageRender</artifactId>
 	<packaging>jar</packaging>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>javaPageRender</name>
 	<description>Write and render html using static constructors</description>
 	<url>https://github.com/beothorn/JavaPageRender</url>
