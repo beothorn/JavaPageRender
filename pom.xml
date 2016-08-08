@@ -4,7 +4,7 @@
 	<groupId>com.github.beothorn</groupId>
 	<artifactId>javaPageRender</artifactId>
 	<packaging>jar</packaging>
-	<version>0.0.2</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>javaPageRender</name>
 	<description>Write and render html using static constructors</description>
 	<url>https://github.com/beothorn/JavaPageRender</url>
@@ -34,7 +34,7 @@
 		<connection>scm:git:git@github.com:beothorn/JavaPageRender.git</connection>
 		<developerConnection>scm:git|ssh://git@github.com/beothorn/JavaPageRender.git</developerConnection>
 		<url>git@github.com:beothorn/JavaPageRender.git</url>
-		<tag>javaPageRender-0.0.2</tag>
+		<tag>javaPageRender-0.0.1</tag>
 	</scm>
 
 	<properties>
