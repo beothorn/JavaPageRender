@@ -39,7 +39,7 @@ public class PageRenderingTest{
 				br()
 			)
 		).render();
-		Assert.assertThat(img, is("<img height=\"13\" width=\"11\" src=\"foo\"> alt text<br></img>"));
+		Assert.assertThat(img, is("<img height=\"13\" width=\"11\" src=\"foo\">alt text<br></img>"));
 	}
 	
 }

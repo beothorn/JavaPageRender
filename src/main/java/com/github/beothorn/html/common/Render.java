@@ -1,6 +1,7 @@
 package com.github.beothorn.html.common;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import com.github.beothorn.html.Renderable;
 
@@ -26,11 +27,12 @@ public class Render {
 	){
 		StringBuilder rendered = new StringBuilder();
 		rendered.append("<"+tag+" ");
-		props.stream()
+		rendered.append(props.stream()
 			.map(Renderable::render)
-			.map(s -> s +" ")
-			.forEach(rendered::append);
-		rendered.append(" >");
+			.collect(Collectors.joining(" "))
+		);
+		if(props.size() > 0)
+		rendered.append(">");
 		children.stream()
 			.map(Renderable::render)
 			.forEach(rendered::append);
