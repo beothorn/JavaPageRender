@@ -14,20 +14,35 @@ public class Img implements Renderable {
 	private List<Renderable> children = new ArrayList<Renderable>();
 	private List<Renderable> props = new ArrayList<>();
 	
-	public static List<ImgProp> props(final ImgProp... props){
+	public static List<ImgProp> props(
+		final ImgProp... props
+	){
 		return asList(props);
 	}
 	
-	public static ImgProp height(int height){
+	public static ImgProp height(
+		final int height
+	){
 		return new ImgProp("height", Integer.toString(height));
 	}
 	
-	public static ImgProp width(int width) {
+	public static ImgProp width(
+		final int width
+	) {
 		return new ImgProp("width", Integer.toString(width));
 	}
 
-	public static ImgProp src(String src) {
+	public static ImgProp src(
+		final String src
+	) {
 		return new ImgProp("src", src);
+	}
+	
+	public static ImgProp data(
+		final String name, 
+		final String value
+	) {
+		return new ImgProp("data-"+name, value);
 	}
 
 	public Img(
