@@ -14,6 +14,15 @@ public abstract class DomElement implements Renderable{
 	
 	protected abstract String tag();
 	
+	/***
+	 * 
+	 * The <strong>onclick</strong> property returns the <code>click</code> event handler code on the current element.
+	 * 
+	 * https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick
+	 * 
+	 * @param onclickFunction
+	 * @return
+	 */
 	public DomElement onClick(final String onclickFunction){
 		props.add(new SimpleAttr("onclick", onclickFunction));
 		return this;
