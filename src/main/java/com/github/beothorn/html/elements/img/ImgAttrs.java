@@ -103,6 +103,13 @@ public class ImgAttrs extends SimpleAttr {
 		return new ImgAttrs("width", width.render());
 	}
 	
+	/***
+	 * Only use this for custom attributes.
+	 * For all others use the static constructors available on this class
+	 * 
+	 * @param name
+	 * @param value
+	 */
 	public ImgAttrs(String name, String value) {
 		super(name, value);
 	}

@@ -22,17 +22,18 @@ public class Render {
 	
 	public static String renderTag(
 		final String tag,
-		final List<Renderable> props,
+		final List<Renderable> attributes,
 		final List<Renderable> children
 	){
 		StringBuilder rendered = new StringBuilder();
-		rendered.append("<"+tag+" ");
-		rendered.append(props.stream()
+		rendered.append("<"+tag+ ((attributes.size() > 0) ? " " : "") );
+		
+		rendered.append(attributes.stream()
 			.map(Renderable::render)
 			.collect(Collectors.joining(" "))
 		);
-		if(props.size() > 0)
 		rendered.append(">");
+		
 		children.stream()
 			.map(Renderable::render)
 			.forEach(rendered::append);

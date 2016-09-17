@@ -4,8 +4,6 @@ import static java.util.Arrays.asList;
 
 import java.util.List;
 
-import org.apache.commons.lang3.StringEscapeUtils;
-
 import com.github.beothorn.html.Renderable;
 import com.github.beothorn.html.common.SimpleTag;
 import com.github.beothorn.html.common.UntaggedContent;
@@ -56,7 +54,7 @@ public class Page {
 	 * @param childrenElements
 	 * @return
 	 */
-	public static Renderable button(
+	public static DomElement button(
 		final Renderable... childrenElements
 	){
 		return new Button(childrenElements);
@@ -68,7 +66,7 @@ public class Page {
 	 * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
 	 *
 	 */
-	public static Renderable img(
+	public static DomElement img(
 		final Renderable... childrenElements
 	){
 		return new Img(childrenElements);
@@ -80,7 +78,7 @@ public class Page {
 	 * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
 	 *
 	 */
-	public static Renderable img(
+	public static DomElement img(
 		final List<ImgAttrs> props, 
 		final List<Renderable> childrenElements
 	){
@@ -103,7 +101,7 @@ public class Page {
 	 * @param childrenElements
 	 * @return
 	 */
-	public static Renderable header(
+	public static DomElement header(
 		final Header header,
 		final Renderable... childrenElements
 	){
@@ -122,7 +120,7 @@ public class Page {
 	 * @param title
 	 * @return
 	 */
-	public static Renderable header(
+	public static DomElement header(
 		final Header header,
 		final String title
 	){
@@ -141,7 +139,7 @@ public class Page {
 	 * @param childrenElements
 	 * @return
 	 */
-	public static Renderable b(
+	public static DomElement b(
 		final Renderable... childrenElements
 	){
 		return new SimpleTag("b", asList(childrenElements));
@@ -159,7 +157,7 @@ public class Page {
 	 * @param childrenElements
 	 * @return
 	 */
-	public static Renderable b(
+	public static DomElement b(
 		final String text
 	){
 		return new SimpleTag("b", asList(text(text)));
@@ -175,7 +173,7 @@ public class Page {
 	public static Text text(
 		final String content
 	) {
-		return new Text(StringEscapeUtils.escapeHtml4(content));
+		return new Text(content);
 	}
 
 	/***

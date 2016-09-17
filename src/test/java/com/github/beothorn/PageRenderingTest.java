@@ -2,6 +2,7 @@ package com.github.beothorn;
 
 import static com.github.beothorn.html.Unit.px;
 import static com.github.beothorn.html.elements.Page.br;
+import static com.github.beothorn.html.elements.Page.button;
 import static com.github.beothorn.html.elements.Page.content;
 import static com.github.beothorn.html.elements.Page.header;
 import static com.github.beothorn.html.elements.Page.html;
@@ -43,6 +44,15 @@ public class PageRenderingTest{
 			)
 		).render();
 		Assert.assertThat(img, is("<img height=\"13px\" width=\"11px\" src=\"foo\">img text<br></img>"));
+	}
+	
+	@Test
+	public void simpleButton(){
+		String button = button(
+			text("test")
+		).onClick("alert('Hello')")
+		.render();
+		Assert.assertThat(button, is("<button onclick=\"alert('Hello')\">test</button>"));
 	}
 	
 }

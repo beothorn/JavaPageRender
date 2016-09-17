@@ -32,6 +32,6 @@ public class Button extends DomElement{
 	
 	@Override
 	protected String tag() {
-		return "img";
+		return "button";
 	}
 }
