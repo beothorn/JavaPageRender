@@ -1,4 +1,4 @@
-package com.github.beothorn.html.elements.img;
+package com.github.beothorn.html.elements.button;
 
 import static java.util.Arrays.asList;
 
@@ -8,22 +8,22 @@ import java.util.List;
 import com.github.beothorn.html.Renderable;
 import com.github.beothorn.html.elements.DomElement;
 
-public class Img extends DomElement {
+public class Button extends DomElement{
 	
-	public static List<ImgAttrs> attrs(
-		final ImgAttrs... props
+	public static List<ButtonAttrs> attrs(
+		final ButtonAttrs... props
 	){
 		return asList(props);
 	}
 
-	public Img(
+	public Button(
 		final Renderable[] childrenElements
 	){
 		children.addAll(Arrays.asList(childrenElements));
 	}
 	
-	public Img(
-		final List<ImgAttrs> props ,
+	public Button(
+		final List<ButtonAttrs> props ,
 		final List<Renderable> childrenElements
 	){
 		children.addAll(childrenElements);
@@ -34,5 +34,4 @@ public class Img extends DomElement {
 	protected String tag() {
 		return "img";
 	}
-
 }

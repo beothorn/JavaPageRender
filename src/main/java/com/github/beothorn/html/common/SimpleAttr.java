@@ -2,12 +2,12 @@ package com.github.beothorn.html.common;
 
 import com.github.beothorn.html.Renderable;
 
-public class SimpleProp implements Renderable {
+public class SimpleAttr implements Renderable {
 
 	private String name;
 	private String value;
 
-	public SimpleProp(
+	public SimpleAttr(
 		final String name,
 		final String value
 	) {

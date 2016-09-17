@@ -1,26 +1,29 @@
 package com.github.beothorn;
 
+import static com.github.beothorn.html.Unit.px;
 import static com.github.beothorn.html.elements.Page.br;
 import static com.github.beothorn.html.elements.Page.content;
-import static com.github.beothorn.html.elements.Page.h1;
+import static com.github.beothorn.html.elements.Page.header;
 import static com.github.beothorn.html.elements.Page.html;
 import static com.github.beothorn.html.elements.Page.img;
 import static com.github.beothorn.html.elements.Page.text;
-import static com.github.beothorn.html.elements.img.Img.height;
-import static com.github.beothorn.html.elements.img.Img.props;
-import static com.github.beothorn.html.elements.img.Img.src;
-import static com.github.beothorn.html.elements.img.Img.width;
+import static com.github.beothorn.html.elements.img.Img.attrs;
+import static com.github.beothorn.html.elements.img.ImgAttrs.height;
+import static com.github.beothorn.html.elements.img.ImgAttrs.src;
+import static com.github.beothorn.html.elements.img.ImgAttrs.width;
 import static org.hamcrest.core.Is.is;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import com.github.beothorn.html.elements.Page.Header;
 
 public class PageRenderingTest{
 	
 	@Test
 	public void helloWorld(){
 		String html = html(
-			h1(text("Hello World"))
+			header(Header.H1,text("Hello World"))
 		).render();
 		
 		Assert.assertThat(html, is("<html><h1>Hello World</h1></html>"));
@@ -29,17 +32,17 @@ public class PageRenderingTest{
 	@Test
 	public void imgWithHeight(){
 		String img = img(
-			props(
-				height(13),
-				width(11),
+			attrs(
+				height(px(13)),
+				width(px(11)),
 				src("foo")
 			),
 			content(
-				text("alt text"),
+				text("img text"),
 				br()
 			)
 		).render();
-		Assert.assertThat(img, is("<img height=\"13\" width=\"11\" src=\"foo\">alt text<br></img>"));
+		Assert.assertThat(img, is("<img height=\"13px\" width=\"11px\" src=\"foo\">img text<br></img>"));
 	}
 	
 }
