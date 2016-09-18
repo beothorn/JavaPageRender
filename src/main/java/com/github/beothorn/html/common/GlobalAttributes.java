@@ -83,7 +83,7 @@ public class GlobalAttributes {
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id"><strong>id</strong></a> of 
 	 * a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu">
 	 * 
-	 * The HTML <menu> element represents a group of commands that a user can perform or activate. 
+	 * The HTML &lt;menu&gt; element represents a group of commands that a user can perform or activate. 
 	 * This includes both list menus, which might appear across the top of a screen, as well as context menus, 
 	 * such as those that might appear underneath a button after it has been clicked.
 	 * 

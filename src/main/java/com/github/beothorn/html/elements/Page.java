@@ -198,7 +198,7 @@ public class Page {
 	}
 	
 	/***
-	 * The HTML <img> element represents an image in the document.
+	 * The HTML &lt;img&gt; element represents an image in the document.
 	 * 
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">Reference on developer.mozilla.org</a>
