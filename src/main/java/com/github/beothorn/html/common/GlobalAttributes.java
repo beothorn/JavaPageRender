@@ -246,7 +246,7 @@ public class GlobalAttributes {
 	 * Note that it is recommended for styles to be defined in a separate file or files. 
 	 * This attribute and the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">&lt;style&gt;</a> 
 	 * 
-	 * The HTML <style> element contains style information for a document, or part of a document. 
+	 * The HTML &lt;style&gt; element contains style information for a document, or part of a document. 
 	 * By default, the style instructions written inside that element are expected to be CSS.
 	 * 
 	 * element have 

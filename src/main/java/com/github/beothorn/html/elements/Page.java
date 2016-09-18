@@ -205,6 +205,8 @@ public class Page {
 	 *
 	 * @param props value
 	 * @param childrenElements value
+	 * 
+	 * @return value
 	 */
 	public static DomElement img(
 		final List<Attribute> props, 
@@ -385,7 +387,7 @@ public class Page {
 	
 	/***
 	 * The <strong>HTML &lt;p&gt; element</strong> (or <em>HTML Paragraph Element</em>) 
-	 * represents a paragraph of text.</span> Paragraphs are usually represented in visual media as blocks 
+	 * represents a paragraph of text. Paragraphs are usually represented in visual media as blocks 
 	 * of text that are separated from adjacent blocks by vertical blank space and/or first-line indentation. 
 	 * Paragraphs are <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements">block-level elements</a>.
 	 * 
