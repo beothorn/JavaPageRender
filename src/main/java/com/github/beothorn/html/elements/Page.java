@@ -128,7 +128,7 @@ public class Page {
 	 * self-contained composition in a document, page, application, or site, which is intended to be 
 	 * independently distributable or reusable (e.g., in syndication). This could be a forum post, a magazine or 
 	 * newspaper article, a blog entry, an object,&nbsp;or any other independent item of content. Each &lt;article&gt; 
-	 * should be identified, typically by including a heading (<h1>-<h6> element) as a child of the &lt;article&gt; element.
+	 * should be identified, typically by including a heading (&lt;h1&gt;-&lt;h6&gt; element) as a child of the &lt;article&gt; element.
 	 * 
 	 * &lt;article&gt;</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">
 	 * &lt;nav&gt;</a>) is appropriate.
@@ -161,7 +161,7 @@ public class Page {
 	 * self-contained composition in a document, page, application, or site, which is intended to be 
 	 * independently distributable or reusable (e.g., in syndication). This could be a forum post, a magazine or 
 	 * newspaper article, a blog entry, an object,&nbsp;or any other independent item of content. Each &lt;article&gt; 
-	 * should be identified, typically by including a heading (<h1>-<h6> element) as a child of the &lt;article&gt; element.
+	 * should be identified, typically by including a heading (&lt;h1&gt;-&lt;h6&gt; element) as a child of the &lt;article&gt; element.
 	 * 
 	 * &lt;article&gt;</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">&lt;nav&gt;</a>) is appropriate.
 	 * 
