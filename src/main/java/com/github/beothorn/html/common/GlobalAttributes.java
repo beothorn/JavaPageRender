@@ -81,9 +81,12 @@ public class GlobalAttributes {
 	/***
 	 * The <strong>contextmenu</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attribute</a> is the 
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id"><strong>id</strong></a> of 
-	 * a <a title="The HTML <menu> element represents a group of commands that a user can perform or activate. 
+	 * a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu">
+	 * 
+	 * The HTML <menu> element represents a group of commands that a user can perform or activate. 
 	 * This includes both list menus, which might appear across the top of a screen, as well as context menus, 
-	 * such as those that might appear underneath a button after it has been clicked." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu">
+	 * such as those that might appear underneath a button after it has been clicked.
+	 * 
 	 * <code>&lt;menu&gt;</code></a> to use as the contextual menu for this element.
 	 * 
 	 * <p>A <em>context menu</em> is a menu that appears upon user interaction, such as a right-click. HTML5 now 
@@ -152,7 +155,7 @@ public class GlobalAttributes {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir">Reference on developer.mozilla.org</a> 
 	 * 
-	 * @param id value
+	 * @param dir value
 	 * @return value
 	 */
 	public static Attribute dir(
@@ -162,9 +165,19 @@ public class GlobalAttributes {
 	}
 	
 	/***
-	 * The <strong><code>hidden</code></strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attribute</a> is a Boolean attribute indicating that the element is not yet, or is no longer, <em>relevant</em>. For example, it can be used to hide elements of the page that can't be used until the login process has been completed.</span> Browsers won't render elements with the <code>hidden</code> attribute set.</p>
-	 * <p>The <code>hidden</code> attribute must not be used to hide content that could legitimately be shown in another presentation. For example, it is incorrect to use hidden to hide panels in a tabbed dialog, because the tabbed interface is merely a kind of overflow presentation — one could equally well just show all the form controls in one big page with a scrollbar. It is similarly incorrect to use this attribute to hide content just from one presentation — if something is marked hidden, it is hidden from all presentations, including, for instance, screen readers.</p>
-	 * <p>Hidden elements shouldn't be linked from non-hidden elements and elements that are descendants of a hidden element are still active, which means that script elements can still execute and form elements can still submit.</p>
+	 * The <strong><code>hidden</code></strong> 
+	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attribute</a> is a 
+	 * Boolean attribute indicating that the element is not yet, or is no longer, <em>relevant</em>. For example, 
+	 * it can be used to hide elements of the page that can't be used until the login process has been completed. 
+	 * Browsers won't render elements with the <code>hidden</code> attribute set.</p>
+	 * <p>The <code>hidden</code> attribute must not be used to hide content that could legitimately be shown in 
+	 * another presentation. For example, it is incorrect to use hidden to hide panels in a tabbed dialog, because 
+	 * the tabbed interface is merely a kind of overflow presentation — one could equally well just show all the form 
+	 * controls in one big page with a scrollbar. It is similarly incorrect to use this attribute to hide content 
+	 * just from one presentation — if something is marked hidden, it is hidden from all presentations, including, 
+	 * for instance, screen readers.</p>
+	 * <p>Hidden elements shouldn't be linked from non-hidden elements and elements that are descendants of a hidden 
+	 * element are still active, which means that script elements can still execute and form elements can still submit.</p>
 	 *
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden">Reference on developer.mozilla.org</a> 
@@ -196,9 +209,24 @@ public class GlobalAttributes {
 	}
 	
 	/***
-	 * <p>The <strong>lang</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attribute</a> participates in defining the language of the element, the language that is non-editable elements are written in or the language that the editable elements should be written in. The tag contains one single entry value in the format defined in the <a href="http://www.ietf.org/rfc/bcp/bcp47.txt" class="external external-icon"><em>Tags for Identifying Languages (BCP47)</em></a> IETF document. If the tag content is the <em>empty string</em> the language is set to <em>unkn</em><em>own</em>; if the tag content is not valid, regarding BCP47, it is set to <em>invalid</em>.</p>
-	 * <p>Even if the <strong>lang</strong> attribute is set, it may not be taken into account, as the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/xml:lang" class="new"><strong>xml:lang</strong></a> attribute has priority.</p>
-	 * <p>For the CSS pseudo-class <a title="The :lang CSS pseudo-class matches elements based on the language the element is determined to be in. In HTML, the language is determined by a combination of the lang attribute, the <meta> element, and possibly by information from the protocol (such as HTTP headers). For other document types there may be other document methods for determining the language." href="https://developer.mozilla.org/en-US/docs/Web/CSS/:lang"><code>:lang</code></a>, two invalid language names are different if their names are different.</p>
+	 * <p>The <strong>lang</strong> 
+	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attribute</a> participates 
+	 * in defining the language of the element, the language that is non-editable elements are written in or the 
+	 * language that the editable elements should be written in. The tag contains one single entry value in the format 
+	 * defined in the <a href="http://www.ietf.org/rfc/bcp/bcp47.txt" class="external external-icon"><em>Tags for 
+	 * Identifying Languages (BCP47)</em></a> IETF document. If the tag content is the <em>empty string</em> the language 
+	 * is set to <em>unkn</em><em>own</em>; if the tag content is not valid, regarding BCP47, it is set to <em>invalid</em>.</p>
+	 * <p>Even if the <strong>lang</strong> attribute is set, it may not be taken into account, as the 
+	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/xml:lang" class="new">
+	 * <strong>xml:lang</strong></a> attribute has priority.</p>
+	 * <p>For the CSS pseudo-class <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:lang"><code>:lang</code></a>, 
+	 *
+	 * The :lang CSS pseudo-class matches elements based on the language the 
+	 * element is determined to be in. In HTML, the language is determined by a combination of the lang attribute, 
+	 * the <meta> element, and possibly by information from the protocol (such as HTTP headers). For other document 
+	 * types there may be other document methods for determining the language.
+	 * 
+	 * two invalid language names are different if their names are different.</p>
 	 * 
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang">Reference on developer.mozilla.org</a>

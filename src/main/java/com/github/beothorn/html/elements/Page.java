@@ -78,7 +78,7 @@ public class Page {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b">Reference on developer.mozilla.org</a>
 	 * 
-	 * @param childrenElements value
+	 * @param text value
 	 * @return value
 	 */
 	public static DomElement b(
@@ -122,14 +122,20 @@ public class Page {
 	 * anything. It can be used to group elements for styling purposes (using the <strong>class</strong> 
 	 * or <strong>id</strong> attributes), or because they share attribute values, such as <strong>lang</strong>. 
 	 * It should be used only when no other semantic element (
-	 * such as <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article" title="The HTML <article> element represents a 
+	 * such as <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article"> 
+	 * 
+	 * The HTML <article> element represents a 
 	 * self-contained composition in a document, page, application, or site, which is intended to be 
 	 * independently distributable or reusable (e.g., in syndication). This could be a forum post, a magazine or 
 	 * newspaper article, a blog entry, an object,&nbsp;or any other independent item of content. Each <article> 
-	 * should be identified, typically by including a heading (<h1>-<h6> element) as a child of the <article> element.">
-	 * <code>&lt;article&gt;</code></a> or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" title="The HTML <nav> element 
+	 * should be identified, typically by including a heading (<h1>-<h6> element) as a child of the <article> element.
+	 * 
+	 * <code>&lt;article&gt;</code></a> or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">
+	 * <code>&lt;nav&gt;</code></a>) is appropriate.
+	 * 
+	 * The HTML <nav> element 
 	 * (HTML Navigation Element) represents a section of a page that links to other pages or to parts within the page: 
-	 * a section with navigation links."><code>&lt;nav&gt;</code></a>) is appropriate.
+	 * a section with navigation links.
 	 * 
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">Reference on developer.mozilla.org</a>
@@ -149,18 +155,24 @@ public class Page {
 	 * anything. It can be used to group elements for styling purposes (using the <strong>class</strong> 
 	 * or <strong>id</strong> attributes), or because they share attribute values, such as <strong>lang</strong>. 
 	 * It should be used only when no other semantic element (
-	 * such as <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article" title="The HTML <article> element represents a 
+	 * such as <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">
+	 * 
+	 * The HTML <article> element represents a 
 	 * self-contained composition in a document, page, application, or site, which is intended to be 
 	 * independently distributable or reusable (e.g., in syndication). This could be a forum post, a magazine or 
 	 * newspaper article, a blog entry, an object,&nbsp;or any other independent item of content. Each <article> 
-	 * should be identified, typically by including a heading (<h1>-<h6> element) as a child of the <article> element.">
-	 * <code>&lt;article&gt;</code></a> or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" title="The HTML <nav> element 
+	 * should be identified, typically by including a heading (<h1>-<h6> element) as a child of the <article> element.
+	 * 
+	 * <code>&lt;article&gt;</code></a> or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav"><code>&lt;nav&gt;</code></a>) is appropriate.
+	 * 
+	 * The HTML <nav> element 
 	 * (HTML Navigation Element) represents a section of a page that links to other pages or to parts within the page: 
-	 * a section with navigation links."><code>&lt;nav&gt;</code></a>) is appropriate.
+	 * a section with navigation links.
 	 * 
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">Reference on developer.mozilla.org</a>
 	 * 
+	 * @param props value
 	 * @param childrenElements value
 	 * @return value
 	 */
@@ -177,6 +189,7 @@ public class Page {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">Reference on developer.mozilla.org</a>
 	 *
+	 * @param childrenElements value
 	 */
 	public static DomElement img(
 		final DomElement... childrenElements
@@ -251,7 +264,6 @@ public class Page {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">Reference on developer.mozilla.org</a>
 	 *
-	 * @param header value
 	 * @param title value
 	 * @return value
 	 */
@@ -270,7 +282,6 @@ public class Page {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">Reference on developer.mozilla.org</a>
 	 *
-	 * @param header value
 	 * @param title value
 	 * @return value
 	 */
@@ -289,7 +300,6 @@ public class Page {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">Reference on developer.mozilla.org</a>
 	 *
-	 * @param header value
 	 * @param title value
 	 * @return value
 	 */
@@ -308,7 +318,6 @@ public class Page {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">Reference on developer.mozilla.org</a>
 	 *
-	 * @param header value
 	 * @param title value
 	 * @return value
 	 */
@@ -327,7 +336,6 @@ public class Page {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">Reference on developer.mozilla.org</a>
 	 *
-	 * @param header value
 	 * @param title value
 	 * @return value
 	 */
@@ -346,7 +354,6 @@ public class Page {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">Reference on developer.mozilla.org</a>
 	 *
-	 * @param header value
 	 * @param title value
 	 * @return value
 	 */
@@ -382,7 +389,8 @@ public class Page {
 	 * 
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p">Reference on developer.mozilla.org</a>
-	 * 
+	 *
+	 * @param props value
 	 * @param childrenElements value
 	 * @return value
 	 */

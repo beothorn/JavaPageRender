@@ -10,7 +10,7 @@ import com.github.beothorn.html.elements.Px;
 public class ImgAttributes extends Attribute {
 	
 	/***
-	 * The image URL. This attribute is mandatory for the <img> element. 
+	 * The image URL. This attribute is mandatory for the &lt;img&gt; element. 
 	 * On browsers supporting srcset, src is treated like a candidate 
 	 * image with a pixel density descriptor 1x unless an image with 
 	 * this pixel density descriptor is already defined in srcset, or 
