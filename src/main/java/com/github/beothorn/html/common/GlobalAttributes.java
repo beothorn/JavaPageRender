@@ -169,7 +169,7 @@ public class GlobalAttributes {
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attribute</a> is a 
 	 * Boolean attribute indicating that the element is not yet, or is no longer, <em>relevant</em>. For example, 
 	 * it can be used to hide elements of the page that can't be used until the login process has been completed. 
-	 * Browsers won't render elements with the hidden attribute set.</p>
+	 * Browsers won't render elements with the hidden attribute set.
 	 * <p>The hidden attribute must not be used to hide content that could legitimately be shown in 
 	 * another presentation. For example, it is incorrect to use hidden to hide panels in a tabbed dialog, because 
 	 * the tabbed interface is merely a kind of overflow presentation — one could equally well just show all the form 
@@ -241,7 +241,16 @@ public class GlobalAttributes {
 	}
 	
 	/***
-	 * <p>The <strong>style</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attribute</a> contains <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> styling declarations to be applied to the element. Note that it is recommended for styles to be defined in a separate file or files. This attribute and the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style" title="The HTML <style> element contains style information for a document, or part of a document. By default, the style instructions written inside that element are expected to be CSS.">&lt;style&gt;</a> element have mainly the purpose of allowing for quick styling, for example for testing purposes.</p>
+	 * <p>The <strong>style</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attribute</a> 
+	 * contains <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> styling declarations to be applied to the element. 
+	 * Note that it is recommended for styles to be defined in a separate file or files. 
+	 * This attribute and the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">&lt;style&gt;</a> 
+	 * 
+	 * The HTML <style> element contains style information for a document, or part of a document. 
+	 * By default, the style instructions written inside that element are expected to be CSS.
+	 * 
+	 * element have 
+	 * mainly the purpose of allowing for quick styling, for example for testing purposes.</p>
 	 *
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/style">Reference on developer.mozilla.org</a>
