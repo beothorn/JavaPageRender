@@ -16,7 +16,7 @@ public class ImgAttributes extends Attribute {
 	 * this pixel density descriptor is already defined in srcset, or 
 	 * unless srcset contains 'w' descriptors.
 	 * 
-	 * @param src
+	 * @param src value
 	 * @return value
 	 */
 	public static ImgAttributes src(
@@ -31,7 +31,7 @@ public class ImgAttributes extends Attribute {
 	 * image is not in one of the supported formats, or if the image is 
 	 * not yet downloaded.
 	 * 
-	 * @param altText
+	 * @param altText value
 	 * @return value
 	 */
 	public static ImgAttributes alt(
@@ -45,7 +45,7 @@ public class ImgAttributes extends Attribute {
 	 * height could be defined pixels or as a percentage. 
 	 * In HTML5, however, the value must be in pixels.
 	 * 
-	 * @param height
+	 * @param height value
 	 * @return value
 	 */
 	public static ImgAttributes height(
@@ -59,7 +59,7 @@ public class ImgAttributes extends Attribute {
 	 * a percentage or pixels were acceptable values. In HTML5, however, 
 	 * only pixels are acceptable.
 	 * 
-	 * @param width
+	 * @param width value
 	 * @return value
 	 */
 	public static ImgAttributes width(
@@ -72,8 +72,8 @@ public class ImgAttributes extends Attribute {
 	 * Use this for creating attribute, bur first
 	 * chack all others static constructors available on this class
 	 * 
-	 * @param name
-	 * @param value
+	 * @param name value
+	 * @param value value
 	 */
 	public ImgAttributes(String name, String value) {
 		super(name, value);

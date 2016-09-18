@@ -34,7 +34,7 @@ public class GlobalAttributes {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey">Reference on developer.mozilla.org</a> 
 	 * 
-	 * @param keyboardShortcut
+	 * @param keyboardShortcut value
 	 * @return value
 	 */
 	public static Attribute accessKey(
@@ -52,7 +52,7 @@ public class GlobalAttributes {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class">Reference on developer.mozilla.org</a>
 	 * 
-	 * @param className
+	 * @param className value
 	 * @return value
 	 */
 	public static Attribute className(
@@ -69,7 +69,7 @@ public class GlobalAttributes {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable">Reference on developer.mozilla.org</a>
 	 * 
-	 * @param editable
+	 * @param editable value
 	 * @return value
 	 */
 	public static Attribute contentEditable(
@@ -92,7 +92,7 @@ public class GlobalAttributes {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contextmenu">Reference on developer.mozilla.org</a>
 	 * 
-	 * @param id
+	 * @param id value
 	 * @return value
 	 */
 	public static Attribute contextMenu(
@@ -112,8 +112,8 @@ public class GlobalAttributes {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*">Reference on developer.mozilla.org</a>
 	 * 
-	 * @param name
-	 * @param value
+	 * @param name value
+	 * @param value value
 	 * @return value
 	 */
 	public static Attribute data(
@@ -152,7 +152,7 @@ public class GlobalAttributes {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir">Reference on developer.mozilla.org</a> 
 	 * 
-	 * @param id
+	 * @param id value
 	 * @return value
 	 */
 	public static Attribute dir(
@@ -169,7 +169,7 @@ public class GlobalAttributes {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden">Reference on developer.mozilla.org</a> 
 	 * 
-	 * @param hidden
+	 * @param hidden value
 	 * @return value
 	 */
 	public static Attribute hidden(
@@ -186,7 +186,7 @@ public class GlobalAttributes {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id">Reference on developer.mozilla.org</a>
 	 * 
-	 * @param id
+	 * @param id value
 	 * @return value
 	 */
 	public static Attribute id(
@@ -203,7 +203,7 @@ public class GlobalAttributes {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang">Reference on developer.mozilla.org</a>
 	 * 
-	 * @param lang
+	 * @param lang value
 	 * @return value
 	 */
 	public static Attribute lang(
@@ -218,7 +218,7 @@ public class GlobalAttributes {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/style">Reference on developer.mozilla.org</a>
 	 * 
-	 * @param style
+	 * @param style value
 	 * @return value
 	 */
 	public static Attribute style(
@@ -239,7 +239,7 @@ public class GlobalAttributes {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex">Reference on developer.mozilla.org</a>
 	 * 
-	 * @param tabindex
+	 * @param tabindex value
 	 * @return value
 	 */
 	public static Attribute tabIndex(
@@ -256,7 +256,7 @@ public class GlobalAttributes {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title">Reference on developer.mozilla.org</a>
 	 * 
-	 * @param title
+	 * @param title value
 	 * @return value
 	 */
 	public static Attribute title(
