@@ -20,7 +20,8 @@ public class GlobalAttributes {
 	 * element the attribute is set on. The HTMLElement.dataset property 
 	 * gives access to them.
 	 * 
-	 * https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*
+	 * <br>
+	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*">Reference on developer.mozilla.org</a>
 	 * 
 	 * @param name
 	 * @param value
@@ -38,8 +39,9 @@ public class GlobalAttributes {
 	 * Classes allows CSS and JavaScript to select and access specific 
 	 * elements via the class selectors or functions like the method 
 	 * Document.getElementsByClassName().
-	 * 
-	 * https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class
+	 *
+	 * <br>
+	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class">Reference on developer.mozilla.org</a>
 	 * 
 	 * @param className
 	 * @return
@@ -54,8 +56,9 @@ public class GlobalAttributes {
 	 * Defines a unique identifier (ID) which must be unique in the whole document. 
 	 * Its purpose is to identify the element when linking (using a fragment identifier), 
 	 * scripting, or styling (with CSS).
-	 * 
-	 * https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id
+	 *
+	 * <br>
+	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id">Reference on developer.mozilla.org</a>
 	 * 
 	 * @param id
 	 * @return
