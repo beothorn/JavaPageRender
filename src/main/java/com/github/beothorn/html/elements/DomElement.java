@@ -42,7 +42,7 @@ public class DomElement implements Renderable {
 	
 	/***
 	 * 
-	 * The <strong>onclick</strong> property returns the <code>click</code> event handler code on the current element.
+	 * The <strong>onclick</strong> property returns the <code>click event handler code on the current element.
 	 * 
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick">Reference on developer.mozilla.org</a>

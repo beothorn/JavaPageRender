@@ -18,7 +18,7 @@ import com.github.beothorn.html.common.UntaggedContent;
 public class Page {
 	
 	/***
-	 * The <strong>HTML &lt;html&gt;</code> element</strong> (or <em>HTML root element</em>) 
+	 * The <strong>HTML &lt;html&gt; element</strong> (or <em>HTML root element</em>) 
 	 * represents the root of an HTML document. All other elements must be descendants of this element.
 	 * 
 	 * <br>
@@ -34,8 +34,8 @@ public class Page {
 	}
 
 	/***
-	 * The <strong>HTML &lt;body&gt;</code> Element</strong> represents the content of an HTML&nbsp;document. 
-	 * There can be only one &lt;body&gt;</code> element in a document.
+	 * The <strong>HTML &lt;body&gt; Element</strong> represents the content of an HTML&nbsp;document. 
+	 * There can be only one &lt;body&gt; element in a document.
 	 * 
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body">Reference on developer.mozilla.org</a>
@@ -50,7 +50,7 @@ public class Page {
 	}
 	
 	/***
-	 * The <strong>HTML &lt;b&gt;</code> Element</strong> represents a span of text stylistically 
+	 * The <strong>HTML &lt;b&gt; Element</strong> represents a span of text stylistically 
 	 * different from normal text, without conveying any special importance or relevance. It is typically 
 	 * used for keywords in a summary, product names in a review, or other spans of text whose typical 
 	 * presentation would be boldfaced. Another example of its use is to mark the lead sentence of each 
@@ -69,7 +69,7 @@ public class Page {
 	}
 	
 	/***
-	 * The <strong>HTML &lt;b&gt;</code> Element</strong> represents a span of text stylistically 
+	 * The <strong>HTML &lt;b&gt; Element</strong> represents a span of text stylistically 
 	 * different from normal text, without conveying any special importance or relevance. It is typically 
 	 * used for keywords in a summary, product names in a review, or other spans of text whose typical 
 	 * presentation would be boldfaced. Another example of its use is to mark the lead sentence of each 
@@ -88,7 +88,7 @@ public class Page {
 	}
 	
 	/***
-	 * The <strong>HTML <em>&lt;button&gt;</code></em> Element</strong> represents a clickable button.
+	 * The <strong>HTML <em>&lt;button&gt;</em> Element</strong> represents a clickable button.
 	 * 
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button">Reference on developer.mozilla.org</a>
@@ -103,7 +103,7 @@ public class Page {
 	}
 	
 	/***
-	 * The HTML element<em>&nbsp;l</em><em>ine break&nbsp;</em>&lt;br&gt;</code>&nbsp;produces a 
+	 * The HTML element<em>&nbsp;l</em><em>ine break&nbsp;</em>&lt;br&gt;&nbsp;produces a 
 	 * line break in text (carriage-return). It is useful for writing a poem or an address, where 
 	 * the division of lines is significant.
 	 * 
@@ -117,7 +117,7 @@ public class Page {
 	}
 	
 	/***
-	 * The <strong>HTML &lt;div&gt;</code> element</strong> (or <em>HTML Document Division 
+	 * The <strong>HTML &lt;div&gt; element</strong> (or <em>HTML Document Division 
 	 * Element</em>) is the generic container for flow content, which does not inherently represent 
 	 * anything. It can be used to group elements for styling purposes (using the <strong>class</strong> 
 	 * or <strong>id</strong> attributes), or because they share attribute values, such as <strong>lang</strong>. 
@@ -130,8 +130,8 @@ public class Page {
 	 * newspaper article, a blog entry, an object,&nbsp;or any other independent item of content. Each &lt;article&gt; 
 	 * should be identified, typically by including a heading (<h1>-<h6> element) as a child of the &lt;article&gt; element.
 	 * 
-	 * &lt;article&gt;</code></a> or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">
-	 * &lt;nav&gt;</code></a>) is appropriate.
+	 * &lt;article&gt;</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">
+	 * &lt;nav&gt;</a>) is appropriate.
 	 * 
 	 * The HTML &lt;nav&gt; element 
 	 * (HTML Navigation Element) represents a section of a page that links to other pages or to parts within the page: 
@@ -150,7 +150,7 @@ public class Page {
 	}
 	
 	/***
-	 * The <strong>HTML &lt;div&gt;</code> element</strong> (or <em>HTML Document Division 
+	 * The <strong>HTML &lt;div&gt; element</strong> (or <em>HTML Document Division 
 	 * Element</em>) is the generic container for flow content, which does not inherently represent 
 	 * anything. It can be used to group elements for styling purposes (using the <strong>class</strong> 
 	 * or <strong>id</strong> attributes), or because they share attribute values, such as <strong>lang</strong>. 
@@ -163,7 +163,7 @@ public class Page {
 	 * newspaper article, a blog entry, an object,&nbsp;or any other independent item of content. Each &lt;article&gt; 
 	 * should be identified, typically by including a heading (<h1>-<h6> element) as a child of the &lt;article&gt; element.
 	 * 
-	 * &lt;article&gt;</code></a> or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">&lt;nav&gt;</code></a>) is appropriate.
+	 * &lt;article&gt;</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">&lt;nav&gt;</a>) is appropriate.
 	 * 
 	 * The HTML &lt;nav&gt; element 
 	 * (HTML Navigation Element) represents a section of a page that links to other pages or to parts within the page: 
@@ -184,7 +184,7 @@ public class Page {
 	}
 	
 	/***
-	 * <p>The <strong>HTML &lt;img&gt;</code> element</strong> represents an image in the document.</p>
+	 * <p>The <strong>HTML &lt;img&gt; element</strong> represents an image in the document.</p>
 	 * 
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">Reference on developer.mozilla.org</a>
@@ -216,8 +216,8 @@ public class Page {
 	}
 	
 	/***
-	 * <strong>Heading</strong> elements implement six levels of document headings, &lt;h1&gt;</code> 
-	 * is the most important and &lt;h6&gt;</code> is the least. A heading element briefly describes 
+	 * <strong>Heading</strong> elements implement six levels of document headings, &lt;h1&gt; 
+	 * is the most important and &lt;h6&gt; is the least. A heading element briefly describes 
 	 * the topic of the section it introduces. Heading information may be used by user agents, for example, 
 	 * to construct a table of contents for a document automatically.
 	 *
@@ -236,8 +236,8 @@ public class Page {
 	}
 	
 	/***
-	 * <strong>Heading</strong> elements implement six levels of document headings, &lt;h1&gt;</code> 
-	 * is the most important and &lt;h6&gt;</code> is the least. A heading element briefly describes 
+	 * <strong>Heading</strong> elements implement six levels of document headings, &lt;h1&gt; 
+	 * is the most important and &lt;h6&gt; is the least. A heading element briefly describes 
 	 * the topic of the section it introduces. Heading information may be used by user agents, for example, 
 	 * to construct a table of contents for a document automatically.
 	 *
@@ -256,8 +256,8 @@ public class Page {
 	}
 	
 	/***
-	 * <strong>Heading</strong> elements implement six levels of document headings, &lt;h1&gt;</code> 
-	 * is the most important and &lt;h6&gt;</code> is the least. A heading element briefly describes 
+	 * <strong>Heading</strong> elements implement six levels of document headings, &lt;h1&gt; 
+	 * is the most important and &lt;h6&gt; is the least. A heading element briefly describes 
 	 * the topic of the section it introduces. Heading information may be used by user agents, for example, 
 	 * to construct a table of contents for a document automatically.
 	 *
@@ -274,8 +274,8 @@ public class Page {
 	}
 	
 	/***
-	 * <strong>Heading</strong> elements implement six levels of document headings, &lt;h1&gt;</code> 
-	 * is the most important and &lt;h6&gt;</code> is the least. A heading element briefly describes 
+	 * <strong>Heading</strong> elements implement six levels of document headings, &lt;h1&gt; 
+	 * is the most important and &lt;h6&gt; is the least. A heading element briefly describes 
 	 * the topic of the section it introduces. Heading information may be used by user agents, for example, 
 	 * to construct a table of contents for a document automatically.
 	 *
@@ -292,8 +292,8 @@ public class Page {
 	}
 	
 	/***
-	 * <strong>Heading</strong> elements implement six levels of document headings, &lt;h1&gt;</code> 
-	 * is the most important and &lt;h6&gt;</code> is the least. A heading element briefly describes 
+	 * <strong>Heading</strong> elements implement six levels of document headings, &lt;h1&gt; 
+	 * is the most important and &lt;h6&gt; is the least. A heading element briefly describes 
 	 * the topic of the section it introduces. Heading information may be used by user agents, for example, 
 	 * to construct a table of contents for a document automatically.
 	 *
@@ -310,8 +310,8 @@ public class Page {
 	}
 	
 	/***
-	 * <strong>Heading</strong> elements implement six levels of document headings, &lt;h1&gt;</code> 
-	 * is the most important and &lt;h6&gt;</code> is the least. A heading element briefly describes 
+	 * <strong>Heading</strong> elements implement six levels of document headings, &lt;h1&gt; 
+	 * is the most important and &lt;h6&gt; is the least. A heading element briefly describes 
 	 * the topic of the section it introduces. Heading information may be used by user agents, for example, 
 	 * to construct a table of contents for a document automatically.
 	 *
@@ -328,8 +328,8 @@ public class Page {
 	}
 	
 	/***
-	 * <strong>Heading</strong> elements implement six levels of document headings, &lt;h1&gt;</code> 
-	 * is the most important and &lt;h6&gt;</code> is the least. A heading element briefly describes 
+	 * <strong>Heading</strong> elements implement six levels of document headings, &lt;h1&gt; 
+	 * is the most important and &lt;h6&gt; is the least. A heading element briefly describes 
 	 * the topic of the section it introduces. Heading information may be used by user agents, for example, 
 	 * to construct a table of contents for a document automatically.
 	 *
@@ -346,8 +346,8 @@ public class Page {
 	}
 	
 	/***
-	 * <strong>Heading</strong> elements implement six levels of document headings, &lt;h1&gt;</code> 
-	 * is the most important and &lt;h6&gt;</code> is the least. A heading element briefly describes 
+	 * <strong>Heading</strong> elements implement six levels of document headings, &lt;h1&gt; 
+	 * is the most important and &lt;h6&gt; is the least. A heading element briefly describes 
 	 * the topic of the section it introduces. Heading information may be used by user agents, for example, 
 	 * to construct a table of contents for a document automatically.
 	 *
@@ -364,7 +364,7 @@ public class Page {
 	}
 	
 	/***
-	 * The <strong>HTML &lt;p&gt;</code> element</strong> (or <em>HTML Paragraph Element</em>) 
+	 * The <strong>HTML &lt;p&gt; element</strong> (or <em>HTML Paragraph Element</em>) 
 	 * represents a paragraph of text.</span> Paragraphs are usually represented in visual media as blocks 
 	 * of text that are separated from adjacent blocks by vertical blank space and/or first-line indentation. 
 	 * Paragraphs are <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements">block-level elements</a>.
@@ -382,7 +382,7 @@ public class Page {
 	}
 	
 	/***
-	 * The <strong>HTML &lt;p&gt;</code> element</strong> (or <em>HTML Paragraph Element</em>) 
+	 * The <strong>HTML &lt;p&gt; element</strong> (or <em>HTML Paragraph Element</em>) 
 	 * represents a paragraph of text.</span> Paragraphs are usually represented in visual media as blocks 
 	 * of text that are separated from adjacent blocks by vertical blank space and/or first-line indentation. 
 	 * Paragraphs are <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements">block-level elements</a>.
