@@ -1,6 +1,7 @@
 package com.github.beothorn;
 
 import static com.github.beothorn.html.Unit.px;
+import static com.github.beothorn.html.common.GlobalAttributes.attrs;
 import static com.github.beothorn.html.elements.Page.br;
 import static com.github.beothorn.html.elements.Page.button;
 import static com.github.beothorn.html.elements.Page.content;
@@ -8,10 +9,9 @@ import static com.github.beothorn.html.elements.Page.header;
 import static com.github.beothorn.html.elements.Page.html;
 import static com.github.beothorn.html.elements.Page.img;
 import static com.github.beothorn.html.elements.Page.text;
-import static com.github.beothorn.html.elements.img.Img.attrs;
-import static com.github.beothorn.html.elements.img.ImgAttrs.height;
-import static com.github.beothorn.html.elements.img.ImgAttrs.src;
-import static com.github.beothorn.html.elements.img.ImgAttrs.width;
+import static com.github.beothorn.html.elements.img.ImgAttributes.height;
+import static com.github.beothorn.html.elements.img.ImgAttributes.src;
+import static com.github.beothorn.html.elements.img.ImgAttributes.width;
 import static org.hamcrest.core.Is.is;
 
 import org.junit.Assert;

@@ -1,18 +1,44 @@
 package com.github.beothorn.html.elements;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import com.github.beothorn.html.Renderable;
 import com.github.beothorn.html.common.Render;
-import com.github.beothorn.html.common.SimpleAttr;
+import com.github.beothorn.html.common.Attribute;
 
-public abstract class DomElement implements Renderable{
+public class DomElement implements Renderable {
 
 	protected List<Renderable> children = new ArrayList<Renderable>();
 	protected List<Renderable> props = new ArrayList<>();
+	private final String tag;
 	
-	protected abstract String tag();
+	public DomElement(
+		final String tag,
+		final Renderable[] childrenElements
+	){
+		this.tag = tag;
+		children.addAll(Arrays.asList(childrenElements));
+	}
+	
+	public DomElement(
+		final String tag,
+		final List<? extends Renderable> childrenElements
+	){
+		this.tag = tag;
+		children.addAll(childrenElements);
+	}
+	
+	public DomElement(
+		final String tag,
+		final List<? extends Attribute> props ,
+		final List<? extends Renderable> childrenElements
+	){
+		this.tag = tag;
+		children.addAll(childrenElements);
+		this.props.addAll(props);
+	}
 	
 	/***
 	 * 
@@ -24,13 +50,13 @@ public abstract class DomElement implements Renderable{
 	 * @return
 	 */
 	public DomElement onClick(final String onclickFunction){
-		props.add(new SimpleAttr("onclick", onclickFunction));
+		props.add(new Attribute("onclick", onclickFunction));
 		return this;
 	}
 	
 	@Override
 	public String render() {
-		return Render.renderTag(tag(), props, children);
+		return Render.renderTag(tag, props, children);
 	}
 	
 }
