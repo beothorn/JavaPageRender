@@ -126,24 +126,6 @@ public class GlobalAttributes {
 		return new Attribute("data-"+name, value);
 	}
 	
-	public enum Direction{
-		LEFT_TO_RIGHT("ltr"), RIGHT_TO_LEFT("rtl"), AUTO("auto");
-		
-		private final String name;       
-
-	    private Direction(String s) {
-	        name = s;
-	    }
-
-	    public boolean equalsName(String otherName) {
-	        return (otherName == null) ? false : name.equals(otherName);
-	    }
-
-	    public String toString() {
-	       return this.name;
-	    }
-	}
-	
 	/***
 	 * <p>The <strong>dir</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attribute</a> is an enumerated attribute indicates the directionality of the element's text. It can have the following values:</p>
 	 * <ul>

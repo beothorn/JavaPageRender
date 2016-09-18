@@ -11,13 +11,12 @@ public class Render {
 		final String tag, 
 		final List<Renderable> children
 	){
-		StringBuilder rendered = new StringBuilder();
-		rendered.append("<" + tag + ">");
-		children.stream()
-			.map(Renderable::render)
-			.forEach(rendered::append);
-		rendered.append("</"+ tag + ">");
-		return rendered.toString();
+		return 
+			("<" + tag + ">")+
+				children.stream()
+					.map(Renderable::render)
+					.collect(Collectors.joining())+
+			("</"+ tag + ">");
 	}
 	
 	public static String renderTag(
@@ -25,20 +24,16 @@ public class Render {
 		final List<Renderable> attributes,
 		final List<Renderable> children
 	){
-		StringBuilder rendered = new StringBuilder();
-		rendered.append("<"+tag+ ((attributes.size() > 0) ? " " : "") );
-		
-		rendered.append(attributes.stream()
-			.map(Renderable::render)
-			.collect(Collectors.joining(" "))
-		);
-		rendered.append(">");
-		
-		children.stream()
-			.map(Renderable::render)
-			.forEach(rendered::append);
-		rendered.append("</" + tag + ">");
-		return rendered.toString();
+		return 
+			("<"+tag+ ((attributes.size() > 0) ? " " : "") )+
+				attributes.stream()
+					.map(Renderable::render)
+					.collect(Collectors.joining(" "))+
+			(">")+
+				children.stream()
+					.map(Renderable::render)
+					.collect(Collectors.joining())+
+			("</" + tag + ">");
 	}
 
 }

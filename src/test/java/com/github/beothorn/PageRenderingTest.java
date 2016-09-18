@@ -17,7 +17,7 @@ import static org.hamcrest.core.Is.is;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.github.beothorn.html.elements.Page.Header;
+import com.github.beothorn.html.elements.Header;
 
 public class PageRenderingTest{
 	

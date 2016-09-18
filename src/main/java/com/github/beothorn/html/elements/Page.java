@@ -215,10 +215,6 @@ public class Page {
 		return new DomElement("img", props, childrenElements);
 	}
 	
-	public enum Header{
-		H1, H2, H3, H4, H5, H6
-	}
-	
 	/***
 	 * <strong>Heading</strong> elements implement six levels of document headings, &lt;h1&gt; 
 	 * is the most important and &lt;h6&gt; is the least. A heading element briefly describes 
