@@ -62,7 +62,7 @@ public class GlobalAttributes {
 	}
 	
 	/***
-	 * The <code><strong>contenteditable</strong></code> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attribute</a> 
+	 * The <strong>contenteditable</strong></code> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attribute</a> 
 	 * is an enumerated attribute indicating if the element should be editable by the user. If so, the 
 	 * browser modifies its widget to allow editing.
 	 * 
@@ -87,7 +87,7 @@ public class GlobalAttributes {
 	 * This includes both list menus, which might appear across the top of a screen, as well as context menus, 
 	 * such as those that might appear underneath a button after it has been clicked.
 	 * 
-	 * <code>&lt;menu&gt;</code></a> to use as the contextual menu for this element.
+	 * &lt;menu&gt;</code></a> to use as the contextual menu for this element.
 	 * 
 	 * <p>A <em>context menu</em> is a menu that appears upon user interaction, such as a right-click. HTML5 now 
 	 * allows us to customize this menu. Here are some implementation examples, including nested menus.</p>
@@ -165,12 +165,12 @@ public class GlobalAttributes {
 	}
 	
 	/***
-	 * The <strong><code>hidden</code></strong> 
+	 * The <strong>hidden</code></strong> 
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attribute</a> is a 
 	 * Boolean attribute indicating that the element is not yet, or is no longer, <em>relevant</em>. For example, 
 	 * it can be used to hide elements of the page that can't be used until the login process has been completed. 
-	 * Browsers won't render elements with the <code>hidden</code> attribute set.</p>
-	 * <p>The <code>hidden</code> attribute must not be used to hide content that could legitimately be shown in 
+	 * Browsers won't render elements with the hidden</code> attribute set.</p>
+	 * <p>The hidden</code> attribute must not be used to hide content that could legitimately be shown in 
 	 * another presentation. For example, it is incorrect to use hidden to hide panels in a tabbed dialog, because 
 	 * the tabbed interface is merely a kind of overflow presentation — one could equally well just show all the form 
 	 * controls in one big page with a scrollbar. It is similarly incorrect to use this attribute to hide content 
@@ -219,11 +219,11 @@ public class GlobalAttributes {
 	 * <p>Even if the <strong>lang</strong> attribute is set, it may not be taken into account, as the 
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/xml:lang" class="new">
 	 * <strong>xml:lang</strong></a> attribute has priority.</p>
-	 * <p>For the CSS pseudo-class <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:lang"><code>:lang</code></a>, 
+	 * <p>For the CSS pseudo-class <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:lang">:lang</code></a>, 
 	 *
 	 * The :lang CSS pseudo-class matches elements based on the language the 
 	 * element is determined to be in. In HTML, the language is determined by a combination of the lang attribute, 
-	 * the <meta> element, and possibly by information from the protocol (such as HTTP headers). For other document 
+	 * the &lt;meta&gt; element, and possibly by information from the protocol (such as HTTP headers). For other document 
 	 * types there may be other document methods for determining the language.
 	 * 
 	 * two invalid language names are different if their names are different.</p>
@@ -241,7 +241,7 @@ public class GlobalAttributes {
 	}
 	
 	/***
-	 * <p>The <strong>style</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attribute</a> contains <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> styling declarations to be applied to the element. Note that it is recommended for styles to be defined in a separate file or files. This attribute and the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style" title="The HTML <style> element contains style information for a document, or part of a document. By default, the style instructions written inside that element are expected to be CSS."><code>&lt;style&gt;</code></a> element have mainly the purpose of allowing for quick styling, for example for testing purposes.</p>
+	 * <p>The <strong>style</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attribute</a> contains <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> styling declarations to be applied to the element. Note that it is recommended for styles to be defined in a separate file or files. This attribute and the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style" title="The HTML <style> element contains style information for a document, or part of a document. By default, the style instructions written inside that element are expected to be CSS.">&lt;style&gt;</code></a> element have mainly the purpose of allowing for quick styling, for example for testing purposes.</p>
 	 *
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/style">Reference on developer.mozilla.org</a>
@@ -259,10 +259,10 @@ public class GlobalAttributes {
 	 * <p>The <strong>tabindex</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attribute</a> is an integer indicating if the element can take input focus (is <em>focusable</em>), if it should participate to sequential keyboard navigation, and if so, at what position. It can take&nbsp;several values:</p>
 	 * <ul>
 	 * <li>a <em>negative value</em> means that the element should be focusable, but should not be reachable via sequential keyboard navigation;</li>
-	 *  <li><code>0</code> means that the element should be focusable and reachable via sequential keyboard navigation, but its relative order is defined by the platform convention;</li>
+	 *  <li>0</code> means that the element should be focusable and reachable via sequential keyboard navigation, but its relative order is defined by the platform convention;</li>
 	 * <li>a <em>positive</em><em> value</em> means should be focusable and reachable via sequential keyboard navigation; its relative order is defined by the value of the attribute: the sequential follow the increasing number of the <strong>tabindex</strong>. If several elements share the same tabindex, their relative order follows their relative position in the document.</li>
 	 * </ul>
-	 * <p>An element with a <code>0</code> value, an invalid value, or no <strong>tabindex</strong> value should be placed after elements with a positive <strong>tabindex</strong> in the sequential keyboard navigation order.</p>
+	 * <p>An element with a 0</code> value, an invalid value, or no <strong>tabindex</strong> value should be placed after elements with a positive <strong>tabindex</strong> in the sequential keyboard navigation order.</p>
 	 *
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex">Reference on developer.mozilla.org</a>
