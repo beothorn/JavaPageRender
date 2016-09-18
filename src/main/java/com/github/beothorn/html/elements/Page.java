@@ -34,6 +34,22 @@ public class Page {
 	}
 
 	/***
+	 * The <strong>HTML <code>&lt;body&gt;</code> Element</strong> represents the content of an HTML&nbsp;document. 
+	 * There can be only one <code>&lt;body&gt;</code> element in a document.
+	 * 
+	 * <br>
+	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body">Reference on developer.mozilla.org</a>
+	 * 
+	 * @param childrenElements
+	 * @return
+	 */
+	public static DomElement body(
+		final DomElement... childrenElements
+	) {
+		return new DomElement("body", childrenElements);
+	}
+	
+	/***
 	 * <td>The <strong>HTML <code>&lt;b&gt;</code> Element</strong> represents a span of text stylistically 
 	 * different from normal text, without conveying any special importance or relevance. It is typically 
 	 * used for keywords in a summary, product names in a review, or other spans of text whose typical 
