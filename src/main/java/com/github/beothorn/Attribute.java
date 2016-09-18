@@ -1,6 +1,4 @@
-package com.github.beothorn.html.common;
-
-import com.github.beothorn.html.Renderable;
+package com.github.beothorn;
 
 public class Attribute implements Renderable {
 

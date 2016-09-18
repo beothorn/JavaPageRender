@@ -1,6 +1,6 @@
 package com.github.beothorn.html.elements.img;
 
-import com.github.beothorn.html.common.Attribute;
+import com.github.beothorn.Attribute;
 import com.github.beothorn.html.elements.Px;
 /***
  * 

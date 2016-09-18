@@ -1,9 +1,7 @@
-package com.github.beothorn.html.common;
+package com.github.beothorn;
 
 import java.util.List;
 import java.util.stream.Collectors;
-
-import com.github.beothorn.html.Renderable;
 
 public class Render {
 	
@@ -25,15 +23,23 @@ public class Render {
 		final List<Renderable> children
 	){
 		return 
-			("<"+tag+ ((attributes.size() > 0) ? " " : "") )+
-				attributes.stream()
-					.map(Renderable::render)
-					.collect(Collectors.joining(" "))+
-			(">")+
+			renderEmptyTag(tag, attributes)+
 				children.stream()
 					.map(Renderable::render)
 					.collect(Collectors.joining())+
 			("</" + tag + ">");
+	}
+	
+	public static String renderEmptyTag(
+		final String tag,
+		final List<Renderable> attributes
+	){
+		return 
+			("<"+tag+ ((attributes.size() > 0) ? " " : "") )+
+				attributes.stream()
+					.map(Renderable::render)
+					.collect(Collectors.joining(" "))+
+			(">");
 	}
 
 }

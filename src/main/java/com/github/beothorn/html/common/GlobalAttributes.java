@@ -4,6 +4,8 @@ import static java.util.Arrays.asList;
 
 import java.util.List;
 
+import com.github.beothorn.Attribute;
+
 /***
  * 
  * <strong>Global attributes</strong> are attributes common to all HTML elements; 
@@ -17,6 +19,12 @@ import java.util.List;
  */
 public class GlobalAttributes {
 
+	/***
+	 * Static constructor for an attribute list 
+	 * 
+	 * @param props
+	 * @return
+	 */
 	public static List<Attribute> attrs(
 		final Attribute... props
 	){

@@ -1,5 +1,6 @@
-package com.github.beothorn.html;
+package com.github.beothorn.html.common;
 
+import com.github.beothorn.Renderable;
 import com.github.beothorn.html.elements.Px;
 
 public interface Unit extends Renderable{

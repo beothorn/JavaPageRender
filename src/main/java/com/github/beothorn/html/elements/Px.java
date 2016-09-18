@@ -1,6 +1,6 @@
 package com.github.beothorn.html.elements;
 
-import com.github.beothorn.html.Unit;
+import com.github.beothorn.html.common.Unit;
 
 public class Px implements Unit{
 	

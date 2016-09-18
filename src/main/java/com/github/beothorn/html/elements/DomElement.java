@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.github.beothorn.html.Renderable;
-import com.github.beothorn.html.common.Render;
-import com.github.beothorn.html.common.Attribute;
+import com.github.beothorn.Attribute;
+import com.github.beothorn.Render;
+import com.github.beothorn.Renderable;
 
 public class DomElement implements Renderable {
 

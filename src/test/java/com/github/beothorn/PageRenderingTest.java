@@ -1,14 +1,13 @@
 package com.github.beothorn;
 
-import static com.github.beothorn.html.Unit.px;
+import static com.github.beothorn.html.JPRBasicElements.content;
+import static com.github.beothorn.html.JPRBasicElements.html;
+import static com.github.beothorn.html.JPRBasicElements.text;
+import static com.github.beothorn.html.JPRForms.button;
+import static com.github.beothorn.html.JPRImageAndMultimedia.img;
+import static com.github.beothorn.html.JPRInlineText.br;
 import static com.github.beothorn.html.common.GlobalAttributes.attrs;
-import static com.github.beothorn.html.elements.Page.br;
-import static com.github.beothorn.html.elements.Page.button;
-import static com.github.beothorn.html.elements.Page.content;
-import static com.github.beothorn.html.elements.Page.header;
-import static com.github.beothorn.html.elements.Page.html;
-import static com.github.beothorn.html.elements.Page.img;
-import static com.github.beothorn.html.elements.Page.text;
+import static com.github.beothorn.html.common.Unit.px;
 import static com.github.beothorn.html.elements.img.ImgAttributes.height;
 import static com.github.beothorn.html.elements.img.ImgAttributes.src;
 import static com.github.beothorn.html.elements.img.ImgAttributes.width;
@@ -17,6 +16,8 @@ import static org.hamcrest.core.Is.is;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.github.beothorn.html.JPRBasicElements;
+import com.github.beothorn.html.JPRContentSectioning;
 import com.github.beothorn.html.elements.Header;
 
 public class PageRenderingTest{
@@ -24,7 +25,7 @@ public class PageRenderingTest{
 	@Test
 	public void helloWorld(){
 		String html = html(
-			header(Header.H1,text("Hello World"))
+			JPRContentSectioning.header(Header.H1, JPRBasicElements.text("Hello World"))
 		).render();
 		
 		Assert.assertThat(html, is("<html><h1>Hello World</h1></html>"));
@@ -50,8 +51,7 @@ public class PageRenderingTest{
 	public void simpleButton(){
 		String button = button(
 			text("test")
-		).onClick("alert('Hello')")
-		.render();
+		).onClick("alert('Hello')").render();
 		Assert.assertThat(button, is("<button onclick=\"alert('Hello')\">test</button>"));
 	}
 	
