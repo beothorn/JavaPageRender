@@ -50,11 +50,11 @@ public class Page {
 	}
 	
 	/***
-	 * <td>The <strong>HTML <code>&lt;b&gt;</code> Element</strong> represents a span of text stylistically 
+	 * The <strong>HTML <code>&lt;b&gt;</code> Element</strong> represents a span of text stylistically 
 	 * different from normal text, without conveying any special importance or relevance. It is typically 
 	 * used for keywords in a summary, product names in a review, or other spans of text whose typical 
 	 * presentation would be boldfaced. Another example of its use is to mark the lead sentence of each 
-	 * paragraph of an article.</td>
+	 * paragraph of an article.
 	 * 
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b">Reference on developer.mozilla.org</a>
@@ -69,11 +69,11 @@ public class Page {
 	}
 	
 	/***
-	 * <td>The <strong>HTML <code>&lt;b&gt;</code> Element</strong> represents a span of text stylistically 
+	 * The <strong>HTML <code>&lt;b&gt;</code> Element</strong> represents a span of text stylistically 
 	 * different from normal text, without conveying any special importance or relevance. It is typically 
 	 * used for keywords in a summary, product names in a review, or other spans of text whose typical 
 	 * presentation would be boldfaced. Another example of its use is to mark the lead sentence of each 
-	 * paragraph of an article.</td>
+	 * paragraph of an article.
 	 * 
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b">Reference on developer.mozilla.org</a>
