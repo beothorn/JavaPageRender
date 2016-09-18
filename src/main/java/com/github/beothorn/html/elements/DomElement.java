@@ -48,7 +48,7 @@ public class DomElement implements Renderable {
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick">Reference on developer.mozilla.org</a>
 	 * 
 	 * @param onclickFunction
-	 * @return
+	 * @return value
 	 */
 	public DomElement onClick(final String onclickFunction){
 		props.add(new Attribute("onclick", onclickFunction));

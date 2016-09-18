@@ -25,7 +25,7 @@ public class Page {
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html">Reference on developer.mozilla.org</a>
 	 * 
 	 * @param childrenElements All elements contained inside the html tag
-	 * @return
+	 * @return value
 	 */
 	public static Renderable html(
 		final DomElement... childrenElements
@@ -41,7 +41,7 @@ public class Page {
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body">Reference on developer.mozilla.org</a>
 	 * 
 	 * @param childrenElements
-	 * @return
+	 * @return value
 	 */
 	public static DomElement body(
 		final DomElement... childrenElements
@@ -60,7 +60,7 @@ public class Page {
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b">Reference on developer.mozilla.org</a>
 	 * 
 	 * @param childrenElements
-	 * @return
+	 * @return value
 	 */
 	public static DomElement b(
 		final Renderable... childrenElements
@@ -79,7 +79,7 @@ public class Page {
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b">Reference on developer.mozilla.org</a>
 	 * 
 	 * @param childrenElements
-	 * @return
+	 * @return value
 	 */
 	public static DomElement b(
 		final String text
@@ -94,7 +94,7 @@ public class Page {
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button">Reference on developer.mozilla.org</a>
 	 * 
 	 * @param childrenElements
-	 * @return
+	 * @return value
 	 */
 	public static DomElement button(
 		final DomElement... childrenElements
@@ -110,7 +110,7 @@ public class Page {
 	 * <br>
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br">Reference on developer.mozilla.org</a>
 	 * 
-	 * @return
+	 * @return value
 	 */
 	public static DomElement br() {
 		return new Br();
@@ -135,7 +135,7 @@ public class Page {
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">Reference on developer.mozilla.org</a>
 	 * 
 	 * @param childrenElements
-	 * @return
+	 * @return value
 	 */
 	public static DomElement div(
 		final DomElement... childrenElements
@@ -162,7 +162,7 @@ public class Page {
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">Reference on developer.mozilla.org</a>
 	 * 
 	 * @param childrenElements
-	 * @return
+	 * @return value
 	 */
 	public static DomElement div(
 		final List<Attribute> props,
@@ -213,7 +213,7 @@ public class Page {
 	 *
 	 * @param header
 	 * @param childrenElements
-	 * @return
+	 * @return value
 	 */
 	public static DomElement header(
 		final Header header,
@@ -233,7 +233,7 @@ public class Page {
 	 *
 	 * @param header
 	 * @param title
-	 * @return
+	 * @return value
 	 */
 	public static DomElement header(
 		final Header header,
@@ -253,7 +253,7 @@ public class Page {
 	 *
 	 * @param header
 	 * @param title
-	 * @return
+	 * @return value
 	 */
 	public static DomElement h1(
 		final String title
@@ -272,7 +272,7 @@ public class Page {
 	 *
 	 * @param header
 	 * @param title
-	 * @return
+	 * @return value
 	 */
 	public static DomElement h2(
 		final String title
@@ -291,7 +291,7 @@ public class Page {
 	 *
 	 * @param header
 	 * @param title
-	 * @return
+	 * @return value
 	 */
 	public static DomElement h3(
 		final String title
@@ -310,7 +310,7 @@ public class Page {
 	 *
 	 * @param header
 	 * @param title
-	 * @return
+	 * @return value
 	 */
 	public static DomElement h4(
 		final String title
@@ -329,7 +329,7 @@ public class Page {
 	 *
 	 * @param header
 	 * @param title
-	 * @return
+	 * @return value
 	 */
 	public static DomElement h5(
 		final String title
@@ -348,7 +348,7 @@ public class Page {
 	 *
 	 * @param header
 	 * @param title
-	 * @return
+	 * @return value
 	 */
 	public static DomElement h6(
 		final String title
@@ -366,7 +366,7 @@ public class Page {
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p">Reference on developer.mozilla.org</a>
 	 * 
 	 * @param childrenElements
-	 * @return
+	 * @return value
 	 */
 	public static DomElement p(
 		final DomElement... childrenElements
@@ -384,7 +384,7 @@ public class Page {
 	 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p">Reference on developer.mozilla.org</a>
 	 * 
 	 * @param childrenElements
-	 * @return
+	 * @return value
 	 */
 	public static DomElement p(
 		final List<Attribute> props,
@@ -400,7 +400,7 @@ public class Page {
 	 * This text will be escaped
 	 * 
 	 * @param content
-	 * @return
+	 * @return value
 	 */
 	public static Text text(
 		final String content
@@ -412,7 +412,7 @@ public class Page {
 	 * Shortcut to join multiple renderables on a single list.
 	 * 
 	 * @param childrenElements
-	 * @return
+	 * @return value
 	 */
 	public static List<DomElement> content(
 		final DomElement... childrenElements
@@ -424,7 +424,7 @@ public class Page {
 	 * Used to wrap renderables at the same hierarchy level as a single renderable.
 	 * 
 	 * @param childrenElements
-	 * @return
+	 * @return value
 	 */
 	public static Renderable wrap(
 		final Renderable... childrenElements

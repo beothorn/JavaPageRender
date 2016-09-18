@@ -17,7 +17,7 @@ public class ImgAttributes extends Attribute {
 	 * unless srcset contains 'w' descriptors.
 	 * 
 	 * @param src
-	 * @return
+	 * @return value
 	 */
 	public static ImgAttributes src(
 		final String src
@@ -32,7 +32,7 @@ public class ImgAttributes extends Attribute {
 	 * not yet downloaded.
 	 * 
 	 * @param altText
-	 * @return
+	 * @return value
 	 */
 	public static ImgAttributes alt(
 		final String altText
@@ -46,7 +46,7 @@ public class ImgAttributes extends Attribute {
 	 * In HTML5, however, the value must be in pixels.
 	 * 
 	 * @param height
-	 * @return
+	 * @return value
 	 */
 	public static ImgAttributes height(
 		final Px height
@@ -60,7 +60,7 @@ public class ImgAttributes extends Attribute {
 	 * only pixels are acceptable.
 	 * 
 	 * @param width
-	 * @return
+	 * @return value
 	 */
 	public static ImgAttributes width(
 		final Px width
