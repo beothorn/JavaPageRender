@@ -1,11 +1,11 @@
-package com.github.beothorn.html.common;
+package com.github.beothorn.html.elements.types;
 
-public enum Direction {
-    LEFT_TO_RIGHT("ltr"), RIGHT_TO_LEFT("rtl"), AUTO("auto");
+public enum Target {
+    SELF("_self"), BLANK("_blank"), PARENT("_parent"), TOP("_top");
 
     private final String name;
 
-    private Direction(final String s) {
+    private Target(final String s) {
         name = s;
     }
 
