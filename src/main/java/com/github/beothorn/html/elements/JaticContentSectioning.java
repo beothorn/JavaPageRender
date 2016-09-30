@@ -45,6 +45,23 @@ public class JaticContentSectioning {
     }
 
     /***
+     * The <em>HTML <code>&lt;aside&gt;</code> element</em> represents a section of the page with content
+     * connected tangentially to the rest, which could be considered separate from that content. These
+     * sections are often represented as sidebars or inserts. They often contain the definitions on the
+     * sidebars, such as definitions from the glossary; there may also be other types of information, such as
+     * related advertisements; the biography of the author; web applications; profile information or related
+     * links on the blog.
+     *
+     * <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">Reference on developer.mozilla.org</a>
+     *
+     * @param childrenElements value
+     * @return value
+     */
+    public static DomElement aside(final DomElement... childrenElements) {
+        return JaticHTMLElementFactory.get().elementWithContent("aside", childrenElements);
+    }
+
+    /***
      * The <strong>HTML <code>&lt;base&gt;</code> element</strong> specifies the
      * base URL to use for all relative URLs contained within a document. There
      * can be only one <code>&lt;base&gt;</code> element in a document.&nbsp;
