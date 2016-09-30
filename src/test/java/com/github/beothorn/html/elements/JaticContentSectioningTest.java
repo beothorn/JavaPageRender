@@ -11,7 +11,7 @@ public class JaticContentSectioningTest {
 
     @Test
     public void htmlTest(){
-        assertThat(JaticContentSectioning.base("foo").render(), is("<base href=\"foo\">"));
-        assertThat(JaticContentSectioning.base("foo",Target.SELF).render(), is("<base href=\"foo\" target=\"_self\">"));
+        assertThat(JaticDocumentMetadata.base("foo").render(), is("<base href=\"foo\">"));
+        assertThat(JaticDocumentMetadata.base("foo",Target.SELF).render(), is("<base href=\"foo\" target=\"_self\">"));
     }
 }

@@ -2,12 +2,10 @@ package com.github.beothorn.html.elements;
 
 import static java.util.Arrays.asList;
 
-import com.github.beothorn.Attribute;
 import com.github.beothorn.Renderable;
 import com.github.beothorn.html.DomElement;
 import com.github.beothorn.html.JaticHTMLElementFactory;
 import com.github.beothorn.html.elements.types.Header;
-import com.github.beothorn.html.elements.types.Target;
 
 public class JaticContentSectioning {
 
@@ -17,6 +15,7 @@ public class JaticContentSectioning {
      * <code>&lt;body&gt;</code></a> ancestor; in the latter case, it applies to
      * the whole document.
      *
+     * <br>
      * <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address">Reference on developer.mozilla.org</a>
      *
      * @param childrenElements value
@@ -35,6 +34,7 @@ public class JaticContentSectioning {
      * a heading (<a href="/en-US/docs/Web/HTML/Element/Heading_Elements"><code>&lt;h1&gt;</code>
      * -<code>&lt;h6&gt;</code></a> element) as a child of the <code>&lt;article&gt;</code> element.
      *
+     * <br>
      * <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">Reference on developer.mozilla.org</a>
      *
      * @param childrenElements value
@@ -52,6 +52,7 @@ public class JaticContentSectioning {
      * related advertisements; the biography of the author; web applications; profile information or related
      * links on the blog.
      *
+     * <br>
      * <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">Reference on developer.mozilla.org</a>
      *
      * @param childrenElements value
@@ -60,56 +61,20 @@ public class JaticContentSectioning {
     public static DomElement aside(final DomElement... childrenElements) {
         return JaticHTMLElementFactory.get().elementWithContent("aside", childrenElements);
     }
-
     /***
-     * The <strong>HTML <code>&lt;base&gt;</code> element</strong> specifies the
-     * base URL to use for all relative URLs contained within a document. There
-     * can be only one <code>&lt;base&gt;</code> element in a document.&nbsp;
+     * The<strong> HTML <code>&lt;footer&gt;</code> element</strong> represents a footer for its
+     * nearest <a href="/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document#Defining_Sections_in_HTML5">sectioning content</a> or <a href="/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document#Sectioning_root">sectioning
+     * root</a> element. A footer typically contains information about the author of the section,
+     * copyright data or links to related documents.
      *
-     * <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base">Reference on developer.mozilla.org</a>
+     * <br>
+     * <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer">Reference on developer.mozilla.org</a>
      *
-     * @param href value
+     * @param childrenElements value
      * @return value
      */
-    public static DomElement base(final String href) {
-        return JaticHTMLElementFactory.get().emptyElement("base", asList(new Attribute("href", href)));
-    }
-
-    /***
-     * The <strong>HTML <code>&lt;base&gt;</code> element</strong> specifies the
-     * base URL to use for all relative URLs contained within a document. There
-     * can be only one <code>&lt;base&gt;</code> element in a document.&nbsp;
-     *
-     * <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base">Reference on developer.mozilla.org</a>
-     *
-     * @param href value
-     * @param target
-     *            A name or keyword indicating the default location to display
-     *            the result when hyperlinks or forms cause navigation, for
-     *            elements that do not have an explicit target reference. It is
-     *            a name of, or keyword for, a <em>browsing context</em> (for
-     *            example: tab, window, or inline frame). The following keywords
-     *            have special meanings:
-     *            <ul>
-     *            <li><code>_self</code>: Load the result into the same browsing
-     *            context&nbsp;as the current one. This value is the default if
-     *            the attribute is not specified.</li>
-     *            <li><code>_blank</code>: Load the result into a new unnamed
-     *            browsing context.</li>
-     *            <li><code>_parent</code>: Load the result into the parent
-     *            browsing context of the current one. If there is no parent,
-     *            this option behaves the same way as <code>_self</code>.</li>
-     *            <li><code>_top</code>: Load the result into the top-level
-     *            browsing context (that is, the browsing context that is an
-     *            ancestor of the current one, and has no parent). If there is
-     *            no parent, this option behaves the same way as
-     *            <code>_self</code>.</li>
-     *            </ul>
-     *
-     * @return value
-     */
-    public static DomElement base(final String href, final Target target) {
-        return JaticHTMLElementFactory.get().emptyElement("base", asList(new Attribute("href", href), new Attribute("target", target.toString())));
+    public static DomElement footer(final DomElement... childrenElements) {
+        return JaticHTMLElementFactory.get().elementWithContent("aside", childrenElements);
     }
 
     /***
