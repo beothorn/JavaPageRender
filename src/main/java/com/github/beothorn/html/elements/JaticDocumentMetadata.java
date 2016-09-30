@@ -7,6 +7,16 @@ import com.github.beothorn.html.DomElement;
 import com.github.beothorn.html.JaticHTMLElementFactory;
 import com.github.beothorn.html.elements.types.Target;
 
+/***
+ * Metadata contains information about the page. This includes information about styles,
+ * scripts and data to help software (search engines, browsers, etc.) use and render the page.
+ * Metadata for styles and scripts may be defined in the page or link to another file that has
+ * the information.
+ *
+ * <br>
+ * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Reference on developer.mozilla.org</a>
+ *
+ */
 public class JaticDocumentMetadata {
 
 
@@ -61,5 +71,20 @@ public class JaticDocumentMetadata {
      */
     public static DomElement base(final String href, final Target target) {
         return JaticHTMLElementFactory.get().emptyElement("base", asList(new Attribute("href", href), new Attribute("target", target.toString())));
+    }
+
+    /***
+     * The <strong>HTML <code>&lt;head&gt;</code> element</strong> provides general information
+     * (metadata) about the document, including its title and links to its&nbsp;scripts and
+     * style sheets.
+     *
+     * <br>
+     * <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">Reference on developer.mozilla.org</a>
+     *
+     * @param childrenElements value
+     * @return value
+     */
+    public static DomElement head(final DomElement... childrenElements) {
+        return JaticHTMLElementFactory.get().elementWithContent("head", childrenElements);
     }
 }
