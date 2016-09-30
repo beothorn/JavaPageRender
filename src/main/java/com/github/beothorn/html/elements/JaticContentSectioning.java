@@ -17,6 +17,8 @@ public class JaticContentSectioning {
      * <code>&lt;body&gt;</code></a> ancestor; in the latter case, it applies to
      * the whole document.
      *
+     * <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address">Reference on developer.mozilla.org</a>
+     *
      * @param childrenElements value
      * @return value
      */
@@ -25,12 +27,31 @@ public class JaticContentSectioning {
     }
 
     /***
+     * The <strong>HTML <code>&lt;article&gt;</code> element</strong> represents a self-contained
+     * composition in a document, page, application, or site, which is intended to be independently
+     * distributable or reusable (e.g., in syndication). This could be a forum post, a magazine or
+     * newspaper article, a blog entry, an object,&nbsp;or any other independent item of content.
+     * Each <code>&lt;article&gt;</code> should be identified, typically by including
+     * a heading (<a href="/en-US/docs/Web/HTML/Element/Heading_Elements"><code>&lt;h1&gt;</code>
+     * -<code>&lt;h6&gt;</code></a> element) as a child of the <code>&lt;article&gt;</code> element.
+     *
+     * <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">Reference on developer.mozilla.org</a>
+     *
+     * @param childrenElements value
+     * @return value
+     */
+    public static DomElement article(final DomElement... childrenElements) {
+        return JaticHTMLElementFactory.get().elementWithContent("article", childrenElements);
+    }
+
+    /***
      * The <strong>HTML <code>&lt;base&gt;</code> element</strong> specifies the
      * base URL to use for all relative URLs contained within a document. There
      * can be only one <code>&lt;base&gt;</code> element in a document.&nbsp;
      *
-     * @param href
-     *            value
+     * <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base">Reference on developer.mozilla.org</a>
+     *
+     * @param href value
      * @return value
      */
     public static DomElement base(final String href) {
@@ -42,8 +63,9 @@ public class JaticContentSectioning {
      * base URL to use for all relative URLs contained within a document. There
      * can be only one <code>&lt;base&gt;</code> element in a document.&nbsp;
      *
-     * @param href
-     *            value
+     * <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base">Reference on developer.mozilla.org</a>
+     *
+     * @param href value
      * @param target
      *            A name or keyword indicating the default location to display
      *            the result when hyperlinks or forms cause navigation, for
@@ -81,9 +103,7 @@ public class JaticContentSectioning {
      * a table of contents for a document automatically.
      *
      * <br>
-     * <a href=
-     * "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">Reference
-     * on developer.mozilla.org</a>
+     * <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">Reference on developer.mozilla.org</a>
      *
      * @param header
      *            value
@@ -103,9 +123,7 @@ public class JaticContentSectioning {
      * a table of contents for a document automatically.
      *
      * <br>
-     * <a href=
-     * "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">Reference
-     * on developer.mozilla.org</a>
+     * <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">Reference on developer.mozilla.org</a>
      *
      * @param header
      *            value
