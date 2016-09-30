@@ -228,9 +228,7 @@ public class JaticContentSectioning {
      * a table of contents for a document automatically.
      *
      * <br>
-     * <a href=
-     * "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">Reference
-     * on developer.mozilla.org</a>
+     * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">Reference on developer.mozilla.org</a>
      *
      * @param title
      *            value
@@ -238,6 +236,21 @@ public class JaticContentSectioning {
      */
     public static DomElement h6(final String title) {
         return JaticHTMLElementFactory.get().elementWithContent(Header.H6.toString().toLowerCase(), asList(JaticBasicElements.text(title)));
+    }
+
+    /***
+     * The <strong>HTML <code>&lt;nav&gt;</code> element</strong> (<em>HTML Navigation Element</em>) represents
+     * a section of a page that links to other pages or to parts within the page: a section with
+     * navigation links.
+     *
+     * <br>
+     * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">Reference on developer.mozilla.org</a>
+     *
+     * @param childrenElements value
+     * @return value
+     */
+    public static DomElement nav(final DomElement... childrenElements) {
+        return JaticHTMLElementFactory.get().elementWithContent("nav", childrenElements);
     }
 
 }
