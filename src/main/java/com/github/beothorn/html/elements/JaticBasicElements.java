@@ -15,8 +15,7 @@ import com.github.beothorn.html.elements.types.Text;
  * the HTML element reference on
  *
  * <br>
- * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Reference
- * on developer.mozilla.org</a>
+ * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Reference on developer.mozilla.org</a>
  */
 public class JaticBasicElements {
 

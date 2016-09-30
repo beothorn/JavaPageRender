@@ -7,6 +7,15 @@ import com.github.beothorn.html.DomElement;
 import com.github.beothorn.html.JaticHTMLElementFactory;
 import com.github.beothorn.html.elements.types.Header;
 
+/***
+ * Content sectioning elements allow you to organize the document content into logical pieces.
+ * Use the sectioning elements to create a broad outline for your page content, including header
+ * and footer navigation, and heading elements to identify sections of content.
+ *
+ * <br>
+ * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Reference on developer.mozilla.org</a>
+ *
+ */
 public class JaticContentSectioning {
 
     /***
