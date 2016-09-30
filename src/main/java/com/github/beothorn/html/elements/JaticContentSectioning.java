@@ -12,6 +12,19 @@ import com.github.beothorn.html.elements.types.Target;
 public class JaticContentSectioning {
 
     /***
+     * The <strong>HTML&nbsp;<code>&lt;address&gt;</code> element</strong> supplies contact information for
+     * its nearest <a href="/en-US/docs/Web/HTML/Element/article"><code>&lt;article&gt;</code></a> or <a href="/en-US/docs/Web/HTML/Element/body">
+     * <code>&lt;body&gt;</code></a> ancestor; in the latter case, it applies to
+     * the whole document.
+     *
+     * @param childrenElements value
+     * @return value
+     */
+    public static DomElement address(final DomElement... childrenElements) {
+        return JaticHTMLElementFactory.get().elementWithContent("address", childrenElements);
+    }
+
+    /***
      * The <strong>HTML <code>&lt;base&gt;</code> element</strong> specifies the
      * base URL to use for all relative URLs contained within a document. There
      * can be only one <code>&lt;base&gt;</code> element in a document.&nbsp;
