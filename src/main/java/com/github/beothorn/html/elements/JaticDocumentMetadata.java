@@ -2,9 +2,14 @@ package com.github.beothorn.html.elements;
 
 import static java.util.Arrays.asList;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import com.github.beothorn.Attribute;
 import com.github.beothorn.html.DomElement;
 import com.github.beothorn.html.JaticHTMLElementFactory;
+import com.github.beothorn.html.elements.types.Link;
 import com.github.beothorn.html.elements.types.Target;
 
 /***
@@ -87,4 +92,58 @@ public class JaticDocumentMetadata {
     public static DomElement head(final DomElement... childrenElements) {
         return JaticHTMLElementFactory.get().elementWithContent("head", childrenElements);
     }
+
+    /***
+     * The <strong>HTML <code>&lt;link&gt;</code> element</strong> specifies relationships between
+     * the current document and an external resource. Possible uses for this element include defining
+     * a relational framework for navigation. This Element is most used to link to style sheets.
+     *
+     * <br>
+     * <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">Reference on developer.mozilla.org</a>
+     *
+     * @param href his attribute specifies the <a href="/en-US/docs/Glossary/URL">URL</a> of
+     * the linked resource. A URL might be absolute or relative.
+     *
+     * @param rels This attribute names a relationship of the linked document to
+     * the current document. The attribute must be a space-separated list of the
+     * <a href="/en-US/docs/Web/HTML/Link_types">link types values</a>. The most common use
+     * of this attribute is to specify a link to an external style sheet: the <strong>rel</strong>
+     * attribute is set to <code>stylesheet</code>, and the <strong>href</strong> attribute is set
+     * to the URL of an external style sheet to format the page. WebTV also supports the use of the
+     * value <code>next</code> for <strong>rel</strong> to preload the next page in a document series.
+     *
+     *
+     * @return value
+     */
+    public static DomElement link(final String href, final Link... rels) {
+        final String rel = Arrays.asList(rels).stream().map(Link::toString).collect(Collectors.joining(" "));
+        return JaticHTMLElementFactory.get().emptyElement("link", Arrays.asList(new Attribute("href", href), new Attribute("rel", rel)));
+    }
+
+    /***
+     * TODO: type attributes and other static constructors
+     *
+     * @param href value
+     * @param attrs value
+     * @return value
+     */
+    public static DomElement meta(final String href, final Attribute... attrs) {
+        return JaticHTMLElementFactory.get().emptyElement("link", Arrays.asList(attrs));
+    }
+
+    /***
+     * TODO: CSS type here
+     *
+     * @param childrenElements value
+     * @param props value
+     * @return value
+     */
+    public static DomElement style(
+        final List<? extends Attribute> props,
+        final List<? extends DomElement> childrenElements
+    ) {
+        return JaticHTMLElementFactory.get().elementWithContent("style", props, childrenElements);
+    }
+
+
 }
