@@ -253,4 +253,22 @@ public class JaticContentSectioning {
         return JaticHTMLElementFactory.get().elementWithContent("nav", childrenElements);
     }
 
+    /***
+     * The <strong>HTML <code>&lt;section&gt;</code> element</strong> represents a generic section of
+     * a document, i.e., a thematic grouping of content, typically with a heading.
+     * Each <code>&lt;section&gt;</code> should be identified, typically by including a heading
+     * (<a href="/en-US/docs/Web/HTML/Element/h1"><code>&lt;h1&gt;</code></a>
+     * -<a href="/en-US/docs/Web/HTML/Element/h6"><code>&lt;h6&gt;</code></a> element) as
+     *  a child of the <code>&lt;section&gt;</code> element.
+     *
+     * <br>
+     * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section">Reference on developer.mozilla.org</a>
+     *
+     * @param childrenElements value
+     * @return value
+     */
+    public static DomElement section(final DomElement... childrenElements) {
+        return JaticHTMLElementFactory.get().elementWithContent("section", childrenElements);
+    }
+
 }
