@@ -2,11 +2,20 @@ package com.github.beothorn.html.elements;
 
 import static java.util.Arrays.asList;
 
+import com.github.beothorn.Attribute;
 import com.github.beothorn.Renderable;
 import com.github.beothorn.html.DomElement;
 import com.github.beothorn.html.JaticHTMLElementFactory;
 
 public class JaticInlineText {
+
+    public static DomElement a(final String href, final Renderable... childrenElements) {
+        return JaticHTMLElementFactory.get().elementWithContent(
+            "a",
+            asList(new Attribute("href", href)),
+            asList(childrenElements)
+        );
+    }
 
     /***
      * The <strong>HTML &lt;b&gt; Element</strong> represents a span of text
