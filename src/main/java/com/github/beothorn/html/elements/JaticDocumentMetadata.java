@@ -120,6 +120,10 @@ public class JaticDocumentMetadata {
         return JaticHTMLElementFactory.get().emptyElement("link", Arrays.asList(new Attribute("href", href), new Attribute("rel", rel)));
     }
 
+    public static DomElement externalCss(final String cssFile) {
+        return link(cssFile, Link.STYLESHEET);
+    }
+
     /***
      * TODO: type attributes and other static constructors
      *
@@ -145,5 +149,22 @@ public class JaticDocumentMetadata {
         return JaticHTMLElementFactory.get().elementWithContent("style", props, childrenElements);
     }
 
+    /***
+     * The <strong>HTML <code>&lt;title&gt;</code> element</strong> defines the
+     * title of the document, shown in a browser's title bar or on the page's tab.
+     * It can only contain text, and any contained tags are ignored.
+     *
+     * <br>
+     * <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">Reference on developer.mozilla.org</a>
+     *
+     * @param title value
+     * @return value
+     */
+    public static DomElement title(final String title) {
+        return JaticHTMLElementFactory.get().elementWithContent(
+            "title",
+            JaticBasicElements.text(title)
+        );
+    }
 
 }
